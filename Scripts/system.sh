@@ -5,11 +5,20 @@
 
 if ! command -v brew > /dev/null; then
     echo "[SYSTEM] Install Homebrew"
-    ruby -e "$(curl --location --fail --silent --show-error https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     echo "[SYSTEM] Update Homebrew"
     brew update
 fi
+echo ""
+
+echo "[SYSTEM] Install zsh"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo ""
+
+echo "[SYSTEM] Install NVM"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+nvm install 12
 echo ""
 
 echo "[SYSTEM] Install Homebrew Cask"

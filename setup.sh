@@ -16,7 +16,7 @@ process_option() {
       source scripts/system.sh
       brew bundle
       bundle install
-      source scripts/dev.sh
+      source scripts/npm.sh
       source scripts/git.sh
       source scripts/ssh.sh
       break;;
@@ -25,9 +25,6 @@ process_option() {
       break;;
     'config')
       source scripts/config.sh
-      break;;
-    'dev')
-      source scripts/dev.sh
       break;;
     'gem')
       bundle install
@@ -64,7 +61,6 @@ while true; do
     echo ""
     echo "     brew:  Install Brewfile Dependencies & Applications"
     echo "   config:  Configure macOS (e.g. enabling developer mode)"
-    echo "      dev:  Configure Developer Tools (e.g. Xcode code snippets)"
     echo "      gem:  Install Gemfile Dependencies"
     echo "      git:  Configure git (e.g. adding aliases)"
     echo "      npm:  Install npm packages from scripts/npm.sh"

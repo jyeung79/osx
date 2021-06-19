@@ -47,6 +47,16 @@ English as standard language, which is nice for locales where Apple do
 apply that locale to git.
 
 
+## Other Programs that are needed to be downloaded
+Xcode
+Brother iPrint&Scan
+Logitech camera settings
+Logicapture
+Huion tablet
+Outline
+autoraise
+voltageshift
+
 ## Author
 
 Daniel Saidi, daniel.saidi@gmail.com

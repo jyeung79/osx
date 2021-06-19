@@ -10,3 +10,7 @@ echo ""
 echo "[CONFIG] Enable developer mode for admin users"
 sudo /usr/sbin/DevToolsSecurity -enable
 echo ""
+
+echo "[CONFIG] Install xcode cli tools"
+sudo xcode-select --install
+echo ""
